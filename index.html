@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initital-scale=1"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css"/>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <style>
+		   /*轮播图补充样式*/
+        .carousel-control-prev,.carousel-control-next{width:4%;height:20%;top:40%;border-radius:0.25rem;background-color:#aaa;}
+        .carousel-indicators li{width:0.6rem;height:0.6rem;border-radius:50%;background:#fff;
+        margin-left:0.2rem;margin-right:0.2rem;}
+        .carousel-indicators .active{background-color:#0aa1ed;}
+				.my_header_height{height:107px;}
+				.active{position:relative;}
+				#p1{position:absolute;
+                    top:50%;left:50%;transform:translate(-50%,-50%); color:#fff;font-size:3rem;}
+        /* 头部文件样式*/
+				</style>
+				<link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+<header>
+
+<div class="header"></div>
+<div class="nav"><img src="img/cm_logo.png" alt="logo" class="img">
+<ul class="ul">
+	<li><a href="index.html">首页</a></li>
+	<li><a href="about.html">关于春苗</a></li>
+	<li><a href="anli.html">案例展示</a></li>
+	<li><a href="#demo1" data-toggle="collapse">方案平台<img src="img/select.png" alt=""></a>
+	<ul id="demo1" class="collapse">
+	<li>幼教点读笔方案</li>
+	<li>蓝牙产品方案</li>
+	<li>WIFI产品方案</li>
+	<li>教育云平台</li>
+	</ul>
+	</li>
+	<li><a href="lx.html">联系我们</a></li>
+</ul>
+</div>
+<!--<iframe src="header1.html" frameborder="0" scrolling="no" class="w-100 my_header_height"></iframe>-->
+</header>
+<div>
+    <div class="carousel" data-ride="carousel" id="demo">
+        <!--轮播图片-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+						<p id="p1">为合作伙伴提供技术解决方案</p>
+						<img src="img/ba1.jpg" alt="" class="w-100"/></div>
+            <div class="carousel-item">
+					   <p id="p1">自主核心技术</p>
+						<img src="img/ba2.jpg" alt="" class="w-100"/></div>
+            <div class="carousel-item">
+						<p id="p1">智能教育云平台</p>
+						<img src="img/ba3.jpg" alt="" class="w-100"/></div>
+           
+        </div>
+        <!--左右箭头-->
+
+        <a href="#demo" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+        <a href="#demo" class="carousel-control-next" data-slide="next" ><span class="carousel-control-next-icon"></span></a>
+
+        <!--轮播指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            
+        </ul>
+    </div>
+</div>
+<footer>
+<iframe src="footer.html" frameborder="0" scrolling="no" class="w-100"></iframe>
+</footer>
+</body>
+</html>
